@@ -32,7 +32,9 @@ namespace Graphic
         double GetEndZ(void) const;
 
         void SetStart(Vertex3D vert);
+        void SetStart(double x, double y, double z);
         void SetEnd(Vertex3D vert);
+        void SetEnd(double x, double y, double z);
 
         void SetStartX(double a);
         void SetStartY(double a);

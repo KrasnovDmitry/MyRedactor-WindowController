@@ -109,9 +109,19 @@ void G::Line3D::SetStart(G::Vertex3D vert)
     this->start = vert;
 }
 
+void G::Line3D::SetStart(double x, double y, double z)
+{
+    this->start = G::Vertex3D(x, y, z);
+}
+
 void G::Line3D::SetEnd(G::Vertex3D vert)
 {
     this->end = vert;
+}
+
+void G::Line3D::SetEnd(double x, double y, double z)
+{
+    this->end = G::Vertex3D(x, y, z);
 }
 
 void G::Line3D::SetStartX(double a)
