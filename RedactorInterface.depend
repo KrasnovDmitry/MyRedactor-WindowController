@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1795081504 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\window\window.cpp
+	"Window.h"
+	<stdexcept>
+	<algorithm>
+
+1795101406 source:c:\users\name\desktop\programming_0\2026\redactorinterface\main.cpp
+	<windows.h>
+	<gl/gl.h>
+	<stdio.h>
+	"Redactor/Windows/Window/Window.h"
+	"Redactor/Windows/SimpleRenderWindow/SimpleRenderWindow.h"
+
+1795078507 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\window\window.h
+	<windows.h>
+	<vector>
+
+1795081653 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\simplerenderwindow\simplerenderwindow.cpp
+	"SimpleRenderWindow.h"
+
+1795081489 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\simplerenderwindow\simplerenderwindow.h
+	"../Window/Window.h"
+	<GL/gl.h>
+
+1795089603 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\vertex3d\vertex3d.cpp
+	"Vertex3D.h"
+	<stdexcept>
+
+1795089560 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\vertex3d\vertex3d.h
+
+1795102838 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\colors\color3b\color3b.cpp
+	"Color3B.h"
+	<stdexcept>
+
+1795104511 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\colors\color4b\color4b.cpp
+	"Color4B.h"
+	<stdexcept>
+
+1795101013 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\colors\color4d\color4d.cpp
+	"Color4D.h"
+	<stdexcept>
+
+1795101985 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\colors\color3d\color3d.cpp
+	"Color3D.h"
+	<stdexcept>
+
+1795100483 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\colors\color3d\color3d.h
+
+1795101040 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\colors\color4d\color4d.h
+	"../Color3D/Color3D.h"
+
+1795102820 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\colors\color3b\color3b.h
+	<windows.h>
+
+1795104464 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\colors\color4b\color4b.h
+	"../Color3B/Color3B.h"
+
+1795119919 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\uv\uv2d\uv2d.cpp
+	"UV2D.h"
+	<stdexcept>
+
+1795119859 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\uv\uv2d\uv2d.h
+
