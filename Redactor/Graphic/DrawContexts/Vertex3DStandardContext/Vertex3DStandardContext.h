@@ -16,7 +16,7 @@ namespace DrawContext
     {
     public:
         Vertex3DStandardContext(void);
-        Vertex3DStandardContext(Redactor::Graphic::Colors::Color4B color, Redactor::Graphic::UVs::UV2D text_coords = Redactor::Graphic::UVs::UV2D(0, 0), bool visibility = true);
+        Vertex3DStandardContext(Redactor::Graphic::Colors::Color4B color, Redactor::Graphic::UVs::UV2D text_coords = Redactor::Graphic::UVs::UV2D(0, 0), double size = 1, bool visibility = true);
         Vertex3DStandardContext(const Vertex3DStandardContext& other);
         Vertex3DStandardContext(Vertex3DStandardContext&& other) noexcept;
         Vertex3DStandardContext& operator=(const Vertex3DStandardContext& other);
@@ -26,15 +26,18 @@ namespace DrawContext
         Redactor::Graphic::Colors::Color4B GetColor(void) const;
         Redactor::Graphic::UVs::UV2D GetTextureCoords(void) const;
         bool IsVisible(void) const;
+        double GetSize(void) const;
 
         void SetColor(Redactor::Graphic::Colors::Color4B color);
         void SetTextureCoords(Redactor::Graphic::UVs::UV2D textureCoords);
         void SetVisibility(bool visibility);
+        void SetSize(double size);
 
     protected:
         Redactor::Graphic::Colors::Color4B color;
         Redactor::Graphic::UVs::UV2D textureCoords;
         bool visibility;
+        double size;
     };
 }
 

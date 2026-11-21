@@ -3,11 +3,15 @@
 #include <stdio.h>
 #include "Redactor/Windows/Window/Window.h"
 #include "Redactor/Windows/SimpleRenderWindow/SimpleRenderWindow.h"
+#include "Redactor/Graphic/Vertex3D/Vertex3D.h"
+#include "Redactor/Graphic/Drawers/Console/StandardVertex3DDrawer/StandardVertex3DDrawer.h"
+#include "Redactor/Graphic/Drawers/OpenGL/StandardVertex3DDrawer/StandardVertex3DDrawer.h"
 
 float theta = 0.0f;
 
 void draw_triangle(void);
 void draw_square(void);
+void CreateVertexAndContextForTest(Redactor::Graphic::Vertex3D* vert, Redactor::Graphic::DrawContext::Vertex3DStandardContext* context);
 
 int WINAPI WinMain(HINSTANCE hInstance,
                    HINSTANCE hPrevInstance,
@@ -16,6 +20,14 @@ int WINAPI WinMain(HINSTANCE hInstance,
 {
     MSG msg;
     BOOL bQuit = FALSE;
+
+    Redactor::Graphic::Vertex3D vert;
+    Redactor::Graphic::DrawContext::Vertex3DStandardContext vert_context;
+    Redactor::Graphic::Drawers::Console::StandardVertex3DDrawer vert_console_drawer = Redactor::Graphic::Drawers::Console::StandardVertex3DDrawer();
+    Redactor::Graphic::Drawers::OpenGL::StandardVertex3DDrawer vert_opengl_drawer = Redactor::Graphic::Drawers::OpenGL::StandardVertex3DDrawer();
+
+    CreateVertexAndContextForTest(&vert, &vert_context);
+    vert_console_drawer.Draw(vert, vert_context);
 
     if(!Redactor::Windows::RegisterSimpleWindowClass())
     {
@@ -85,7 +97,14 @@ int WINAPI WinMain(HINSTANCE hInstance,
         {
 
            /* OpenGL animation code goes here */
-            render.DrawByFunc(draw_triangle);
+            //render.DrawByFunc(draw_triangle);
+            render.SetCurrent();
+            glBegin(GL_POINTS);
+            glColor3ub(255, 0, 0);
+            glVertex3d(0, 0, 0);
+            glEnd();
+            vert_opengl_drawer.Draw(vert, vert_context);
+            render.SwapBuffer();
             render_s.DrawByFunc(draw_square);
 
             theta += 1.0f;
@@ -130,4 +149,21 @@ void draw_square(void)
     glEnd();
 
     glPopMatrix();
+}
+
+void CreateVertexAndContextForTest(Redactor::Graphic::Vertex3D* vert, Redactor::Graphic::DrawContext::Vertex3DStandardContext* context)
+{
+    if(vert == nullptr || context == nullptr)
+        return;
+    vert->SetX(0.5);
+    vert->SetY(0.6);
+    vert->SetZ(0.0);
+
+    Redactor::Graphic::Colors::Color4B col = Redactor::Graphic::Colors::Color4B(245, 25, 10, 255);
+    Redactor::Graphic::UVs::UV2D uv = Redactor::Graphic::UVs::UV2D(0.5, 0.1);
+    bool visibility = true;
+    context->SetColor(col);
+    context->SetTextureCoords(uv);
+    context->SetVisibility(visibility);
+    context->SetSize(5);
 }

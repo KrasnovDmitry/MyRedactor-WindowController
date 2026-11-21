@@ -4,12 +4,15 @@
 	<stdexcept>
 	<algorithm>
 
-1795120151 source:c:\users\name\desktop\programming_0\2026\redactorinterface\main.cpp
+1795269435 source:c:\users\name\desktop\programming_0\2026\redactorinterface\main.cpp
 	<windows.h>
 	<gl/gl.h>
 	<stdio.h>
 	"Redactor/Windows/Window/Window.h"
 	"Redactor/Windows/SimpleRenderWindow/SimpleRenderWindow.h"
+	"Redactor/Graphic/Vertex3D/Vertex3D.h"
+	"Redactor/Graphic/Drawers/Console/StandardVertex3DDrawer/StandardVertex3DDrawer.h"
+	"Redactor/Graphic/Drawers/OpenGL/StandardVertex3DDrawer/StandardVertex3DDrawer.h"
 
 1795078507 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\window\window.h
 	<windows.h>
@@ -60,4 +63,32 @@
 	<stdexcept>
 
 1795119859 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\uv\uv2d\uv2d.h
+
+1795268337 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawcontexts\vertex3dstandardcontext\vertex3dstandardcontext.cpp
+	"Vertex3DStandardContext.h"
+	<stdexcept>
+
+1795268121 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawcontexts\vertex3dstandardcontext\vertex3dstandardcontext.h
+	"../../Colors/Color4B/Color4B.h"
+	"../../UV/UV2D/UV2D.h"
+
+1795266846 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\console\standardvertex3ddrawer\standardvertex3ddrawer.h
+	"../../IDrawer.h"
+	"../../../Vertex3D/Vertex3D.h"
+	"../../../DrawContexts/Vertex3DStandardContext/Vertex3DStandardContext.h"
+
+1795266381 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\idrawer.h
+
+1795268392 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\console\standardvertex3ddrawer\standardvertex3ddrawer.cpp
+	"StandardVertex3DDrawer.h"
+	"iostream"
+
+1795269147 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\opengl\standardvertex3ddrawer\standardvertex3ddrawer.cpp
+	"StandardVertex3DDrawer.h"
+	<GL/gl.h>
+
+1795267862 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\opengl\standardvertex3ddrawer\standardvertex3ddrawer.h
+	"../../IDrawer.h"
+	"../../../Vertex3D/Vertex3D.h"
+	"../../../DrawContexts/Vertex3DStandardContext/Vertex3DStandardContext.h"
 
