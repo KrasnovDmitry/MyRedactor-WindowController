@@ -92,16 +92,18 @@
 	"../../../Vertex3D/Vertex3D.h"
 	"../../../DrawContexts/Vertex3DStandardContext/Vertex3DStandardContext.h"
 
-1795277181 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\line3d\line3d.cpp
+1795284025 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\line3d\line3d.cpp
 	"Line3D.h"
+	"math.h"
 
-1795277122 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\line3d\line3d.h
+1795283932 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\line3d\line3d.h
 	"../Vertex3D/Vertex3D.h"
 	"string"
 
-1795282559 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\linkedline3d\linkedline3d.cpp
+1795287009 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\linkedline3d\linkedline3d.cpp
 	"LinkedLine3D.h"
+	"math.h"
 
-1795282522 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\linkedline3d\linkedline3d.h
+1795283973 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\linkedline3d\linkedline3d.h
 	"../Line3D/Line3D.h"
 

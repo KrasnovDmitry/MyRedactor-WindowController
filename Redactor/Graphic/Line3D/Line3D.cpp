@@ -1,4 +1,5 @@
 #include "Line3D.h"
+#include "math.h"
 
 namespace G = Redactor::Graphic;
 
@@ -152,4 +153,12 @@ void G::Line3D::SetEndY(double a)
 void G::Line3D::SetEndZ(double a)
 {
     this->end.SetZ(a);
+}
+
+double G::Line3D::Length(void) const
+{
+    double x = this->GetEndX() - this->GetStartX();
+    double y = this->GetEndY() - this->GetStartY();
+    double z = this->GetEndZ() - this->GetStartZ();
+    return sqrt(x*x + y*y + z*z);
 }

@@ -1,4 +1,5 @@
 #include "LinkedLine3D.h"
+#include "math.h"
 
 namespace G = Redactor::Graphic;
 
@@ -279,3 +280,10 @@ void G::LinkedLine3D::SetEndZ(double a)
         this->end_ptr->SetZ(a);
 }
 
+double G::LinkedLine3D::Length(void) const
+{
+    double x = this->GetEndX() - this->GetStartX();
+    double y = this->GetEndY() - this->GetStartY();
+    double z = this->GetEndZ() - this->GetStartZ();
+    return sqrt(x*x + y*y + z*z);
+}

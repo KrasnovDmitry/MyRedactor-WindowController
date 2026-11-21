@@ -58,6 +58,7 @@ namespace Graphic
         void SetEndY(double a);
         void SetEndZ(double a);
 
+        double Length(void) const;
     protected:
         Vertex3D* start_ptr;
         Vertex3D* end_ptr;
