@@ -47,10 +47,15 @@ namespace DrawContext
         double GetWidth(void) const;
 
         void SetColor(Redactor::Graphic::Colors::Color4B color);
+        void SetColor(BYTE r, BYTE g, BYTE b, BYTE a = 255);
         void SetStartColor(Redactor::Graphic::Colors::Color4B color);
+        void SetStartColor(BYTE r, BYTE g, BYTE b, BYTE a = 255);
         void SetEndColor(Redactor::Graphic::Colors::Color4B color);
+        void SetEndColor(BYTE r, BYTE g, BYTE b, BYTE a = 255);
         void SetStartTextureCoords(Redactor::Graphic::UVs::UV2D textureCoords);
+        void SetStartTextureCoords(double u, double v);
         void SetEndTextureCoords(Redactor::Graphic::UVs::UV2D textureCoords);
+        void SetEndTextureCoords(double u, double v);
         void SetVisibility(bool isVisible);
         void SetStripMode(bool isStripped);
         void SetStripFactor(int stripFactor);

@@ -144,9 +144,20 @@ void Z::Line3DStandardContext::SetColor(Redactor::Graphic::Colors::Color4B color
     this->end_color = color;
 }
 
+void Z::Line3DStandardContext::SetColor(BYTE r, BYTE g, BYTE b, BYTE a)
+{
+    this->start_color = Redactor::Graphic::Colors::Color4B(r, g, b, a);
+    this->end_color = Redactor::Graphic::Colors::Color4B(r, g, b, a);
+}
+
 void Z::Line3DStandardContext::SetStartColor(Redactor::Graphic::Colors::Color4B color)
 {
     this->start_color = color;
+}
+
+void Z::Line3DStandardContext::SetStartColor(BYTE r, BYTE g, BYTE b, BYTE a)
+{
+    this->start_color = Redactor::Graphic::Colors::Color4B(r, g, b, a);
 }
 
 void Z::Line3DStandardContext::SetEndColor(Redactor::Graphic::Colors::Color4B color)
@@ -154,14 +165,29 @@ void Z::Line3DStandardContext::SetEndColor(Redactor::Graphic::Colors::Color4B co
     this->end_color = color;
 }
 
+void Z::Line3DStandardContext::SetEndColor(BYTE r, BYTE g, BYTE b, BYTE a)
+{
+    this->end_color = Redactor::Graphic::Colors::Color4B(r, g, b, a);
+}
+
 void Z::Line3DStandardContext::SetStartTextureCoords(Redactor::Graphic::UVs::UV2D textureCoords)
 {
     this->start_textureCoords = textureCoords;
 }
 
+void Z::Line3DStandardContext::SetStartTextureCoords(double u, double v)
+{
+    this->start_textureCoords = Redactor::Graphic::UVs::UV2D(u, v);
+}
+
 void Z::Line3DStandardContext::SetEndTextureCoords(Redactor::Graphic::UVs::UV2D textureCoords)
 {
     this->end_textureCoords = textureCoords;
+}
+
+void Z::Line3DStandardContext::SetEndTextureCoords(double u, double v)
+{
+    this->end_textureCoords = Redactor::Graphic::UVs::UV2D(u, v);
 }
 
 void Z::Line3DStandardContext::SetVisibility(bool isVisible)

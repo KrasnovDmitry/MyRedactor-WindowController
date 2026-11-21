@@ -6,12 +6,16 @@
 #include "Redactor/Graphic/Vertex3D/Vertex3D.h"
 #include "Redactor/Graphic/Drawers/Console/StandardVertex3DDrawer/StandardVertex3DDrawer.h"
 #include "Redactor/Graphic/Drawers/OpenGL/StandardVertex3DDrawer/StandardVertex3DDrawer.h"
+#include "Redactor/Graphic/LinkedLine3D/LinkedLine3D.h"
+#include "Redactor/Graphic/Drawers/Console/StandardLine3DDrawer/StandardLine3DDrawer.h"
+#include "Redactor/Graphic/Drawers/OpenGL/StandardLine3DDrawer/StandardLine3DDrawer.h"
 
 float theta = 0.0f;
-
+bool is_up_moving = true;
 void draw_triangle(void);
 void draw_square(void);
 void CreateVertexAndContextForTest(Redactor::Graphic::Vertex3D* vert, Redactor::Graphic::DrawContext::Vertex3DStandardContext* context);
+void CreateLineDrawContextForTest(Redactor::Graphic::DrawContext::Line3DStandardContext* context);
 
 int WINAPI WinMain(HINSTANCE hInstance,
                    HINSTANCE hPrevInstance,
@@ -27,7 +31,21 @@ int WINAPI WinMain(HINSTANCE hInstance,
     Redactor::Graphic::Drawers::OpenGL::StandardVertex3DDrawer vert_opengl_drawer = Redactor::Graphic::Drawers::OpenGL::StandardVertex3DDrawer();
 
     CreateVertexAndContextForTest(&vert, &vert_context);
+    Redactor::Graphic::Vertex3D vert_next = vert;
+    vert_next.SetX(-0.3);
+    vert_next.SetY(-0.3);
+
     vert_console_drawer.Draw(vert, vert_context);
+    vert_console_drawer.Draw(vert_next, vert_context);
+
+    Redactor::Graphic::LinkedLine3D line = Redactor::Graphic::LinkedLine3D(&vert, &vert_next);
+    line.SetDeallocFlags(false, false);
+    Redactor::Graphic::DrawContext::Line3DStandardContext line_context;
+    Redactor::Graphic::Drawers::Console::StandardLine3DDrawer line_console_drawer;
+    Redactor::Graphic::Drawers::OpenGL::StandardLine3DDrawer line_opengl_drawer;
+
+    CreateLineDrawContextForTest(&line_context);
+    line_console_drawer.Draw(line, line_context);
 
     if(!Redactor::Windows::RegisterSimpleWindowClass())
     {
@@ -95,15 +113,34 @@ int WINAPI WinMain(HINSTANCE hInstance,
         }
         else
         {
+            line.SetEndY(theta);
 
            /* OpenGL animation code goes here */
             //render.DrawByFunc(draw_triangle);
             render.SetCurrent();
+            glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+            line_opengl_drawer.Draw(line, line_context);
             vert_opengl_drawer.Draw(vert, vert_context);
+            vert_opengl_drawer.Draw(vert_next, vert_context);
             render.SwapBuffer();
             render_s.DrawByFunc(draw_square);
 
-            theta += 1.0f;
+
+            if(is_up_moving)
+                theta += 0.02;
+            else
+                theta -= 0.02;
+            if(theta > 1)
+            {
+                theta = 1;
+                is_up_moving = false;
+            }
+            else if(theta < -1)
+            {
+                theta = -1;
+                is_up_moving = true;
+            }
             Sleep (1);
         }
     }
@@ -162,4 +199,16 @@ void CreateVertexAndContextForTest(Redactor::Graphic::Vertex3D* vert, Redactor::
     context->SetTextureCoords(uv);
     context->SetVisibility(visibility);
     context->SetSize(5);
+}
+
+void CreateLineDrawContextForTest(Redactor::Graphic::DrawContext::Line3DStandardContext* context)
+{
+    if(context == nullptr)
+        return;
+    context->SetStartColor(255, 0, 0);
+    context->SetEndColor(0, 0, 255);
+    context->SetStripFactor(2);
+    context->SetStripPattern(0b0010011100100111);
+    context->SetStripMode(true);
+    context->SetWidth(3);
 }

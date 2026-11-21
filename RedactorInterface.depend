@@ -107,3 +107,29 @@
 1795283973 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\linkedline3d\linkedline3d.h
 	"../Line3D/Line3D.h"
 
+1795291903 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawcontexts\line3dstandardcontext\line3dstandardcontext.cpp
+	"Line3DStandardContext.h"
+
+1795292272 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawcontexts\line3dstandardcontext\line3dstandardcontext.h
+	"../../Colors/Color4B/Color4B.h"
+	"../../UV/UV2D/UV2D.h"
+	"../Vertex3DStandardContext/Vertex3DStandardContext.h"
+
+1795290245 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\console\standardline3ddrawer\standardline3ddrawer.cpp
+	"StandardLine3DDrawer.h"
+	"iostream"
+
+1795290284 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\console\standardline3ddrawer\standardline3ddrawer.h
+	"../../IDrawer.h"
+	"../../../Line3D/Line3D.h"
+	"../../../DrawContexts/Line3DStandardContext/Line3DStandardContext.h"
+
+1795291105 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\opengl\standardline3ddrawer\standardline3ddrawer.cpp
+	"StandardLine3DDrawer.h"
+	<GL/gl.h>
+
+1795290417 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\opengl\standardline3ddrawer\standardline3ddrawer.h
+	"../../IDrawer.h"
+	"../../../Line3D/Line3D.h"
+	"../../../DrawContexts/Line3DStandardContext/Line3DStandardContext.h"
+
