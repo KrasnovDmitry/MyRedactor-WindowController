@@ -4,7 +4,7 @@
 	<stdexcept>
 	<algorithm>
 
-1795269435 source:c:\users\name\desktop\programming_0\2026\redactorinterface\main.cpp
+1795273527 source:c:\users\name\desktop\programming_0\2026\redactorinterface\main.cpp
 	<windows.h>
 	<gl/gl.h>
 	<stdio.h>
@@ -83,7 +83,7 @@
 	"StandardVertex3DDrawer.h"
 	"iostream"
 
-1795269147 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\opengl\standardvertex3ddrawer\standardvertex3ddrawer.cpp
+1795269458 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\opengl\standardvertex3ddrawer\standardvertex3ddrawer.cpp
 	"StandardVertex3DDrawer.h"
 	<GL/gl.h>
 

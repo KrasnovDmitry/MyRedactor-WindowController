@@ -99,10 +99,6 @@ int WINAPI WinMain(HINSTANCE hInstance,
            /* OpenGL animation code goes here */
             //render.DrawByFunc(draw_triangle);
             render.SetCurrent();
-            glBegin(GL_POINTS);
-            glColor3ub(255, 0, 0);
-            glVertex3d(0, 0, 0);
-            glEnd();
             vert_opengl_drawer.Draw(vert, vert_context);
             render.SwapBuffer();
             render_s.DrawByFunc(draw_square);
