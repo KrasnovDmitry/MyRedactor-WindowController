@@ -9,6 +9,8 @@
 #include "Redactor/Graphic/LinkedLine3D/LinkedLine3D.h"
 #include "Redactor/Graphic/Drawers/Console/StandardLine3DDrawer/StandardLine3DDrawer.h"
 #include "Redactor/Graphic/Drawers/OpenGL/StandardLine3DDrawer/StandardLine3DDrawer.h"
+#include "Redactor/Windows/SubclassesProc/DoubleEditSubclassProc/DoubleEditSubclassProc.h"
+#include "Redactor/Windows/GW/GOW/Vertex3DWindow/Vertex3DWindow.h"
 
 float theta = 0.0f;
 bool is_up_moving = true;
@@ -61,6 +63,13 @@ int WINAPI WinMain(HINSTANCE hInstance,
         return -2;
     }
 
+    if(!Redactor::Windows::GW::GOW::RegisterVertex3DWindowClass())
+    {
+        DWORD error = GetLastError();
+        printf("%dx%d\n", HIWORD(error), LOWORD(error));
+        return -10;
+    }
+
     Redactor::Windows::Window window = Redactor::Windows::Window("My Window",
                                                                  WS_OVERLAPPEDWINDOW,
                                                                  CW_USEDEFAULT,
@@ -84,15 +93,21 @@ int WINAPI WinMain(HINSTANCE hInstance,
                                                                                          100,
                                                                                          &window);
 
+    Redactor::Windows::GW::GOW::Vertex3DWindow vertEdit = Redactor::Windows::GW::GOW::Vertex3DWindow();
+    vertEdit.SetObjectPtr(&vert);
     if(!window.Create())
         return -3;
     if(!render.Create())
         return -4;
     if(!render_s.Create())
         return -4;
+    if(!vertEdit.Create())
+        return -5;
+
     window.Show(nCmdShow);
     render.Show(nCmdShow);
     render_s.Show(nCmdShow);
+    vertEdit.Show(nCmdShow);
 
     /* program main loop */
     while (!bQuit)
