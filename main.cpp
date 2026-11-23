@@ -1,6 +1,7 @@
 #include <windows.h>
 #include <gl/gl.h>
 #include <stdio.h>
+#include <iostream>
 #include "Redactor/Windows/Window/Window.h"
 #include "Redactor/Windows/SimpleRenderWindow/SimpleRenderWindow.h"
 #include "Redactor/Graphic/Vertex3D/Vertex3D.h"
@@ -44,14 +45,14 @@ int WINAPI WinMain(HINSTANCE hInstance,
     vert_console_drawer.Draw(vert, vert_context);
     vert_console_drawer.Draw(vert_next, vert_context);
 
-    Redactor::Graphic::LinkedLine3D line = Redactor::Graphic::LinkedLine3D(&vert, &vert_next);
+    Redactor::Graphic::LinkedLine3D line = Redactor::Graphic::LinkedLine3D(nullptr, &vert_next);
     line.SetDeallocFlags(false, false);
     Redactor::Graphic::DrawContext::Line3DStandardContext line_context;
     Redactor::Graphic::Drawers::Console::StandardLine3DDrawer line_console_drawer;
     Redactor::Graphic::Drawers::OpenGL::StandardLine3DDrawer line_opengl_drawer;
 
     CreateLineDrawContextForTest(&line_context);
-    line_console_drawer.Draw(line, line_context);
+    line_console_drawer.Draw((Redactor::Graphic::Line3D)line, line_context);
 
     Redactor::Graphic::Line3D line_0 = Redactor::Graphic::Line3D(-1, 0, 0, 1, 0.5, 0);
 

@@ -83,7 +83,16 @@ G::LinkedLine3D::~LinkedLine3D(void)
 
 G::LinkedLine3D::operator G::Line3D(void) const
 {
-    return G::Line3D(*this->start_ptr, *this->end_ptr);
+    G::Line3D result = G::Line3D();
+    if(this->start_ptr)
+        result.SetStart(*this->start_ptr);
+    else
+        result.SetStart(0, 0, 0);
+    if(this->end_ptr)
+        result.SetEnd(*this->end_ptr);
+    else
+        result.SetEnd(0, 0, 0);
+    return result;
 }
 
 bool G::LinkedLine3D::GetStartDeallocFlag(void) const

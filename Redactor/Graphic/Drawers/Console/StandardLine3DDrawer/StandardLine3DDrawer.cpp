@@ -8,7 +8,6 @@ void Redactor::Graphic::Drawers::Console::StandardLine3DDrawer::Draw(const Redac
 
     Redactor::Graphic::UVs::UV2D start_uv = context.GetStartTextureCoords();
     Redactor::Graphic::UVs::UV2D end_uv = context.GetEndTextureCoords();
-
     std::cout << "Line3D: { " << object.GetStartX() << "; " << object.GetStartY() << "; " << object.GetStartZ() << " } -> { " << object.GetEndX() << "; " << object.GetEndY() << "; " << object.GetEndZ() << " }" << std::endl;
     std::cout << "Line width: " << context.GetWidth() << std::endl;
     std::cout << "Start Color: Color4B { " << (int)start_col.GetR() << "; " << (int)start_col.GetG() << "; " << (int)start_col.GetB() << "; " << (int)start_col.GetA() << " }" << std::endl;

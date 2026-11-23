@@ -4,10 +4,11 @@
 	<stdexcept>
 	<algorithm>
 
-1795448249 source:c:\users\name\desktop\programming_0\2026\redactorinterface\main.cpp
+1795450931 source:c:\users\name\desktop\programming_0\2026\redactorinterface\main.cpp
 	<windows.h>
 	<gl/gl.h>
 	<stdio.h>
+	<iostream>
 	"Redactor/Windows/Window/Window.h"
 	"Redactor/Windows/SimpleRenderWindow/SimpleRenderWindow.h"
 	"Redactor/Graphic/Vertex3D/Vertex3D.h"
@@ -108,7 +109,7 @@
 	"../Vertex3D/Vertex3D.h"
 	"string"
 
-1795447165 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\linkedline3d\linkedline3d.cpp
+1795451131 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\linkedline3d\linkedline3d.cpp
 	"LinkedLine3D.h"
 	"math.h"
 
@@ -123,7 +124,7 @@
 	"../../UV/UV2D/UV2D.h"
 	"../Vertex3DStandardContext/Vertex3DStandardContext.h"
 
-1795290245 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\console\standardline3ddrawer\standardline3ddrawer.cpp
+1795450751 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\console\standardline3ddrawer\standardline3ddrawer.cpp
 	"StandardLine3DDrawer.h"
 	"iostream"
 
