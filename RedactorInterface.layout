@@ -2,4 +2,189 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+	<File name="Redactor\Graphic\Line3D\Line3D.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2951" topLine="152" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\DrawContexts\Vertex3DStandardContext\Vertex3DStandardContext.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3289" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Colors\Color3D\Color3D.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1117" topLine="27" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Drawers\OpenGL\StandardLine3DDrawer\StandardLine3DDrawer.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1117" topLine="11" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Drawers\Console\StandardLine3DDrawer\StandardLine3DDrawer.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1777" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\DrawContexts\Line3DStandardContext\Line3DStandardContext.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2565" topLine="51" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Colors\Color4D\Color4D.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6923" topLine="312" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\DrawContexts\Vertex3DStandardContext\Vertex3DStandardContext.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1339" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Windows\GW\GOW\Vertex3DWindow\Vertex3DWindow.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="367" topLine="24" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Windows\SimpleRenderWindow\SimpleRenderWindow.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="717" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Line3D\Line3D.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1268" topLine="38" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Colors\Color4B\Color4B.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5882" topLine="312" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Windows\GW\GOW\IGraphicObjectWindow.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="174" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Drawers\OpenGL\StandardVertex3DDrawer\StandardVertex3DDrawer.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="820" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Colors\Color4B\Color4B.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1788" topLine="57" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Colors\Color3B\Color3B.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3472" topLine="178" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Drawers\IDrawer.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="339" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Vertex3D\Vertex3D.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1221" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Windows\Window\Window.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1886" topLine="64" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Drawers\Console\StandardLine3DDrawer\StandardLine3DDrawer.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="584" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\UV\UV2D\UV2D.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2197" topLine="114" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Colors\Color4D\Color4D.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1822" topLine="58" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5117" topLine="92" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Vertex3D\Vertex3D.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="756" topLine="139" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Drawers\OpenGL\StandardLine3DDrawer\StandardLine3DDrawer.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="239" topLine="15" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Windows\GW\GOW\Vertex3DWindow\Vertex3DWindow.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6280" topLine="153" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Colors\Color3D\Color3D.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4060" topLine="181" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\UV\UV2D\UV2D.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="927" topLine="35" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\DrawContexts\Line3DStandardContext\Line3DStandardContext.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6558" topLine="179" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Windows\Window\Window.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1039" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\LinkedLine3D\LinkedLine3D.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1913" topLine="55" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Windows\SimpleRenderWindow\SimpleRenderWindow.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3469" topLine="127" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Colors\Color3B\Color3B.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1117" topLine="34" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\LinkedLine3D\LinkedLine3D.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="44" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Windows\SubclassesProc\DoubleEditSubclassProc\DoubleEditSubclassProc.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="104" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Windows\SubclassesProc\DoubleEditSubclassProc\DoubleEditSubclassProc.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="138" topLine="48" />
+		</Cursor>
+	</File>
+	<File name="Redactor\Graphic\Drawers\Console\StandardVertex3DDrawer\StandardVertex3DDrawer.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="18" />
+		</Cursor>
+	</File>
 </CodeBlocks_layout_file>

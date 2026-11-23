@@ -4,7 +4,7 @@
 	<stdexcept>
 	<algorithm>
 
-1795342028 source:c:\users\name\desktop\programming_0\2026\redactorinterface\main.cpp
+1795448249 source:c:\users\name\desktop\programming_0\2026\redactorinterface\main.cpp
 	<windows.h>
 	<gl/gl.h>
 	<stdio.h>
@@ -14,16 +14,19 @@
 	"Redactor/Graphic/Drawers/Console/StandardVertex3DDrawer/StandardVertex3DDrawer.h"
 	"Redactor/Graphic/Drawers/OpenGL/StandardVertex3DDrawer/StandardVertex3DDrawer.h"
 	"Redactor/Graphic/LinkedLine3D/LinkedLine3D.h"
+	"Redactor/Graphic/Line3D/Line3D.h"
 	"Redactor/Graphic/Drawers/Console/StandardLine3DDrawer/StandardLine3DDrawer.h"
 	"Redactor/Graphic/Drawers/OpenGL/StandardLine3DDrawer/StandardLine3DDrawer.h"
 	"Redactor/Windows/SubclassesProc/DoubleEditSubclassProc/DoubleEditSubclassProc.h"
 	"Redactor/Windows/GW/GOW/Vertex3DWindow/Vertex3DWindow.h"
+	"Redactor/Windows/GW/GOW/Line3DWindow/Line3DWindow.h"
+	"Redactor/Windows/GW/GOW/LinkedLine3DWindow/LinkedLine3DWindow.h"
 
 1795078507 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\window\window.h
 	<windows.h>
 	<vector>
 
-1795081653 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\simplerenderwindow\simplerenderwindow.cpp
+1795445805 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\simplerenderwindow\simplerenderwindow.cpp
 	"SimpleRenderWindow.h"
 
 1795081489 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\simplerenderwindow\simplerenderwindow.h
@@ -105,7 +108,7 @@
 	"../Vertex3D/Vertex3D.h"
 	"string"
 
-1795287009 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\linkedline3d\linkedline3d.cpp
+1795447165 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\linkedline3d\linkedline3d.cpp
 	"LinkedLine3D.h"
 	"math.h"
 
@@ -138,7 +141,7 @@
 	"../../../Line3D/Line3D.h"
 	"../../../DrawContexts/Line3DStandardContext/Line3DStandardContext.h"
 
-1795341496 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\gw\gow\vertex3dwindow\vertex3dwindow.cpp
+1795449578 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\gw\gow\vertex3dwindow\vertex3dwindow.cpp
 	"Vertex3DWindow.h"
 	"../../../SubclassesProc/DoubleEditSubclassProc/DoubleEditSubclassProc.h"
 	<string>
@@ -159,4 +162,24 @@
 
 1795340655 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\gw\gow\igraphicobjectwindow.h
 	"../../Window/Window.h"
+
+1795445627 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\gw\gow\line3dwindow\line3dwindow.cpp
+	"Line3DWindow.h"
+	"../../../SubclassesProc/DoubleEditSubclassProc/DoubleEditSubclassProc.h"
+	<string>
+	<iostream>
+
+1795445617 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\gw\gow\line3dwindow\line3dwindow.h
+	"../IGraphicObjectWindow.h"
+	"../../../../Graphic/Line3D/Line3D.h"
+
+1795449157 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\gw\gow\linkedline3dwindow\linkedline3dwindow.h
+	"../IGraphicObjectWindow.h"
+	"../../../../Graphic/LinkedLine3D/LinkedLine3D.h"
+
+1795449521 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\gw\gow\linkedline3dwindow\linkedline3dwindow.cpp
+	"LinkedLine3DWindow.h"
+	"../../../SubclassesProc/DoubleEditSubclassProc/DoubleEditSubclassProc.h"
+	<string>
+	<stdexcept>
 

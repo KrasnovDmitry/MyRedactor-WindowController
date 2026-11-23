@@ -7,10 +7,13 @@
 #include "Redactor/Graphic/Drawers/Console/StandardVertex3DDrawer/StandardVertex3DDrawer.h"
 #include "Redactor/Graphic/Drawers/OpenGL/StandardVertex3DDrawer/StandardVertex3DDrawer.h"
 #include "Redactor/Graphic/LinkedLine3D/LinkedLine3D.h"
+#include "Redactor/Graphic/Line3D/Line3D.h"
 #include "Redactor/Graphic/Drawers/Console/StandardLine3DDrawer/StandardLine3DDrawer.h"
 #include "Redactor/Graphic/Drawers/OpenGL/StandardLine3DDrawer/StandardLine3DDrawer.h"
 #include "Redactor/Windows/SubclassesProc/DoubleEditSubclassProc/DoubleEditSubclassProc.h"
 #include "Redactor/Windows/GW/GOW/Vertex3DWindow/Vertex3DWindow.h"
+#include "Redactor/Windows/GW/GOW/Line3DWindow/Line3DWindow.h"
+#include "Redactor/Windows/GW/GOW/LinkedLine3DWindow/LinkedLine3DWindow.h"
 
 float theta = 0.0f;
 bool is_up_moving = true;
@@ -24,6 +27,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
                    LPSTR lpCmdLine,
                    int nCmdShow)
 {
+    SetConsoleOutputCP(1251);
     MSG msg;
     BOOL bQuit = FALSE;
 
@@ -49,6 +53,8 @@ int WINAPI WinMain(HINSTANCE hInstance,
     CreateLineDrawContextForTest(&line_context);
     line_console_drawer.Draw(line, line_context);
 
+    Redactor::Graphic::Line3D line_0 = Redactor::Graphic::Line3D(-1, 0, 0, 1, 0.5, 0);
+
     if(!Redactor::Windows::RegisterSimpleWindowClass())
     {
         DWORD error = GetLastError();
@@ -67,7 +73,21 @@ int WINAPI WinMain(HINSTANCE hInstance,
     {
         DWORD error = GetLastError();
         printf("%dx%d\n", HIWORD(error), LOWORD(error));
-        return -10;
+        return -3;
+    }
+
+    if(!Redactor::Windows::GW::GOW::RegisterLine3DWindowClass())
+    {
+        DWORD error = GetLastError();
+        printf("%dx%d\n", HIWORD(error), LOWORD(error));
+        return -4;
+    }
+
+    if(!Redactor::Windows::GW::GOW::RegisterLinkedLine3DWindowClass())
+    {
+        DWORD error = GetLastError();
+        printf("%dx%d\n", HIWORD(error), LOWORD(error));
+        return -5;
     }
 
     Redactor::Windows::Window window = Redactor::Windows::Window("My Window",
@@ -95,19 +115,25 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
     Redactor::Windows::GW::GOW::Vertex3DWindow vertEdit = Redactor::Windows::GW::GOW::Vertex3DWindow();
     vertEdit.SetObjectPtr(&vert);
+
+    Redactor::Windows::GW::GOW::LinkedLine3DWindow lineEdit = Redactor::Windows::GW::GOW::LinkedLine3DWindow();
+    lineEdit.SetObjectPtr(&line);
     if(!window.Create())
-        return -3;
+        return -10;
     if(!render.Create())
-        return -4;
+        return -11;
     if(!render_s.Create())
-        return -4;
+        return -12;
     if(!vertEdit.Create())
-        return -5;
+        return -13;
+    if(!lineEdit.Create())
+        return -14;
 
     window.Show(nCmdShow);
     render.Show(nCmdShow);
     render_s.Show(nCmdShow);
     vertEdit.Show(nCmdShow);
+    lineEdit.Show(nCmdShow);
 
     /* program main loop */
     while (!bQuit)
@@ -138,6 +164,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
             line_opengl_drawer.Draw(line, line_context);
             vert_opengl_drawer.Draw(vert, vert_context);
             vert_opengl_drawer.Draw(vert_next, vert_context);
+            line_opengl_drawer.Draw(line_0, line_context);
             render.SwapBuffer();
             render_s.DrawByFunc(draw_square);
 

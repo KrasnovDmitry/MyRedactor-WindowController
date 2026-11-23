@@ -39,7 +39,7 @@ LRESULT CALLBACK Z::Vertex3DWindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPAR
     switch (uMsg)
     {
     case WM_CLOSE:
-        PostQuitMessage(0);
+        self->Destroy();
         return 0;
 
     case WM_DESTROY:
@@ -99,7 +99,7 @@ Z::Vertex3DWindow::Vertex3DWindow(LPCSTR title, DWORD style, int x, int y, int w
     this->x_input = 0;
     this->y_input = 0;
     this->z_input = 0;
-    this->objectPtr = nullptr;
+    this->objectPtr = vert_ptr;
     this->childs.clear();
 }
 
@@ -140,16 +140,17 @@ bool Z::Vertex3DWindow::Create(void)
                                 this->data);
 
 
-    HWND X_lable = CreateWindowEx(0, "STATIC", "X", WS_CHILD | WS_VISIBLE, 0, 0, 15, 20, this->hwnd, 0, GetModuleHandle(nullptr), NULL);
-    this-> x_input = CreateWindowEx(0, "EDIT", "", WS_CHILD | WS_BORDER | WS_VISIBLE, 15, 0, 100, 20, this->hwnd, HMENU(X_INPUT), GetModuleHandle(nullptr), NULL);
+    HWND main_lable = CreateWindowEx(0, "STATIC", "Vertex Edit Window (VEW)", WS_CHILD | WS_VISIBLE, 0, 0, 170, 20, this->hwnd, 0, GetModuleHandle(nullptr), NULL);
+    HWND X_lable = CreateWindowEx(0, "STATIC", "X", WS_CHILD | WS_VISIBLE, 0, 25, 15, 20, this->hwnd, 0, GetModuleHandle(nullptr), NULL);
+    this-> x_input = CreateWindowEx(0, "EDIT", "", WS_CHILD | WS_BORDER | WS_VISIBLE, 15, 25, 100, 20, this->hwnd, HMENU(X_INPUT), GetModuleHandle(nullptr), NULL);
     SetWindowSubclass(this->x_input, Redactor::Windows::SubclassesProc::DoubleEditSubclassProc, 1, 0);
 
-    HWND Y_lable = CreateWindowEx(0, "STATIC", "Y", WS_CHILD | WS_VISIBLE, 0, 25, 15, 20, this->hwnd, 0, GetModuleHandle(nullptr), NULL);
-    this-> y_input = CreateWindowEx(0, "EDIT", "", WS_CHILD | WS_BORDER | WS_VISIBLE, 15, 25, 100, 20, this->hwnd, HMENU(Y_INPUT), GetModuleHandle(nullptr), NULL);
+    HWND Y_lable = CreateWindowEx(0, "STATIC", "Y", WS_CHILD | WS_VISIBLE, 0, 50, 15, 20, this->hwnd, 0, GetModuleHandle(nullptr), NULL);
+    this-> y_input = CreateWindowEx(0, "EDIT", "", WS_CHILD | WS_BORDER | WS_VISIBLE, 15, 50, 100, 20, this->hwnd, HMENU(Y_INPUT), GetModuleHandle(nullptr), NULL);
     SetWindowSubclass(this->y_input, Redactor::Windows::SubclassesProc::DoubleEditSubclassProc, 1, 0);
 
-    HWND Z_lable = CreateWindowEx(0, "STATIC", "Z", WS_CHILD | WS_VISIBLE, 0, 50, 15, 20, this->hwnd, 0, GetModuleHandle(nullptr), NULL);
-    this-> z_input = CreateWindowEx(0, "EDIT", "", WS_CHILD | WS_BORDER | WS_VISIBLE, 15, 50, 100, 20, this->hwnd, HMENU(Z_INPUT), GetModuleHandle(nullptr), NULL);
+    HWND Z_lable = CreateWindowEx(0, "STATIC", "Z", WS_CHILD | WS_VISIBLE, 0, 75, 15, 20, this->hwnd, 0, GetModuleHandle(nullptr), NULL);
+    this-> z_input = CreateWindowEx(0, "EDIT", "", WS_CHILD | WS_BORDER | WS_VISIBLE, 15, 75, 100, 20, this->hwnd, HMENU(Z_INPUT), GetModuleHandle(nullptr), NULL);
     SetWindowSubclass(this->z_input, Redactor::Windows::SubclassesProc::DoubleEditSubclassProc, 1, 0);
 
     if (objectPtr) {
