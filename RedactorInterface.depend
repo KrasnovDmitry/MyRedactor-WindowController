@@ -202,3 +202,220 @@
 	"../../../LinkedLine3D/LinkedLine3D.h"
 	"../../../DrawContexts/Line3DStandardContext/Line3DStandardContext.h"
 
+1795627201 source:e:\forprojects\myredactor-windowcontroller\main.cpp
+	<windows.h>
+	<gl/gl.h>
+	<stdio.h>
+	<iostream>
+	"Redactor/Windows/Window/Window.h"
+	"Redactor/Windows/SimpleRenderWindow/SimpleRenderWindow.h"
+	"Redactor/Graphic/Vertex3D/Vertex3D.h"
+	"Redactor/Graphic/Drawers/Console/StandardVertex3DDrawer/StandardVertex3DDrawer.h"
+	"Redactor/Graphic/Drawers/OpenGL/StandardVertex3DDrawer/StandardVertex3DDrawer.h"
+	"Redactor/Graphic/LinkedLine3D/LinkedLine3D.h"
+	"Redactor/Graphic/Line3D/Line3D.h"
+	"Redactor/Graphic/Drawers/Console/StandardLine3DDrawer/StandardLine3DDrawer.h"
+	"Redactor/Graphic/Drawers/OpenGL/StandardLine3DDrawer/StandardLine3DDrawer.h"
+	"Redactor/Windows/SubclassesProc/DoubleEditSubclassProc/DoubleEditSubclassProc.h"
+	"Redactor/Windows/GW/GOW/Vertex3DWindow/Vertex3DWindow.h"
+	"Redactor/Windows/GW/GOW/Line3DWindow/Line3DWindow.h"
+	"Redactor/Windows/GW/GOW/LinkedLine3DWindow/LinkedLine3DWindow.h"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\windows\window\window.h
+	<windows.h>
+	<vector>
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\windows\simplerenderwindow\simplerenderwindow.h
+	"../Window/Window.h"
+	<GL/gl.h>
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\vertex3d\vertex3d.h
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawers\console\standardvertex3ddrawer\standardvertex3ddrawer.h
+	"../../IDrawer.h"
+	"../../../Vertex3D/Vertex3D.h"
+	"../../../DrawContexts/Vertex3DStandardContext/Vertex3DStandardContext.h"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawers\idrawer.h
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawcontexts\vertex3dstandardcontext\vertex3dstandardcontext.h
+	"../../Colors/Color4B/Color4B.h"
+	"../../UV/UV2D/UV2D.h"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\colors\color4b\color4b.h
+	"../Color3B/Color3B.h"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\colors\color3b\color3b.h
+	<windows.h>
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\uv\uv2d\uv2d.h
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawers\opengl\standardvertex3ddrawer\standardvertex3ddrawer.h
+	"../../IDrawer.h"
+	"../../../Vertex3D/Vertex3D.h"
+	"../../../DrawContexts/Vertex3DStandardContext/Vertex3DStandardContext.h"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\linkedline3d\linkedline3d.h
+	"../Line3D/Line3D.h"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\line3d\line3d.h
+	"../Vertex3D/Vertex3D.h"
+	"string"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawers\console\standardline3ddrawer\standardline3ddrawer.h
+	"../../IDrawer.h"
+	"../../../Line3D/Line3D.h"
+	"../../../DrawContexts/Line3DStandardContext/Line3DStandardContext.h"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawcontexts\line3dstandardcontext\line3dstandardcontext.h
+	"../../Colors/Color4B/Color4B.h"
+	"../../UV/UV2D/UV2D.h"
+	"../Vertex3DStandardContext/Vertex3DStandardContext.h"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawers\opengl\standardline3ddrawer\standardline3ddrawer.h
+	"../../IDrawer.h"
+	"../../../Line3D/Line3D.h"
+	"../../../DrawContexts/Line3DStandardContext/Line3DStandardContext.h"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\windows\subclassesproc\doubleeditsubclassproc\doubleeditsubclassproc.h
+	<windows.h>
+	<commctrl.h>
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\windows\gw\gow\vertex3dwindow\vertex3dwindow.h
+	"../IGraphicObjectWindow.h"
+	"../../../../Graphic/Vertex3D/Vertex3D.h"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\windows\gw\gow\igraphicobjectwindow.h
+	"../../Window/Window.h"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\windows\gw\gow\line3dwindow\line3dwindow.h
+	"../IGraphicObjectWindow.h"
+	"../../../../Graphic/Line3D/Line3D.h"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\windows\gw\gow\linkedline3dwindow\linkedline3dwindow.h
+	"../IGraphicObjectWindow.h"
+	"../../../../Graphic/LinkedLine3D/LinkedLine3D.h"
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\colors\color3b\color3b.cpp
+	"Color3B.h"
+	<stdexcept>
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\colors\color3d\color3d.cpp
+	"Color3D.h"
+	<stdexcept>
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\colors\color3d\color3d.h
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\colors\color4b\color4b.cpp
+	"Color4B.h"
+	<stdexcept>
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\colors\color4d\color4d.cpp
+	"Color4D.h"
+	<stdexcept>
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\colors\color4d\color4d.h
+	"../Color3D/Color3D.h"
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawcontexts\line3dstandardcontext\line3dstandardcontext.cpp
+	"Line3DStandardContext.h"
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawcontexts\vertex3dstandardcontext\vertex3dstandardcontext.cpp
+	"Vertex3DStandardContext.h"
+	<stdexcept>
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawers\console\standardline3ddrawer\standardline3ddrawer.cpp
+	"StandardLine3DDrawer.h"
+	"iostream"
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawers\console\standardvertex3ddrawer\standardvertex3ddrawer.cpp
+	"StandardVertex3DDrawer.h"
+	"iostream"
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawers\opengl\standardline3ddrawer\standardline3ddrawer.cpp
+	"StandardLine3DDrawer.h"
+	<GL/gl.h>
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawers\opengl\standardvertex3ddrawer\standardvertex3ddrawer.cpp
+	"StandardVertex3DDrawer.h"
+	<GL/gl.h>
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\line3d\line3d.cpp
+	"Line3D.h"
+	"math.h"
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\linkedline3d\linkedline3d.cpp
+	"LinkedLine3D.h"
+	"math.h"
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\uv\uv2d\uv2d.cpp
+	"UV2D.h"
+	<stdexcept>
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\vertex3d\vertex3d.cpp
+	"Vertex3D.h"
+	<stdexcept>
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\windows\gw\gow\vertex3dwindow\vertex3dwindow.cpp
+	"Vertex3DWindow.h"
+	"../../../SubclassesProc/DoubleEditSubclassProc/DoubleEditSubclassProc.h"
+	<string>
+	<iostream>
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\windows\simplerenderwindow\simplerenderwindow.cpp
+	"SimpleRenderWindow.h"
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\windows\subclassesproc\doubleeditsubclassproc\doubleeditsubclassproc.cpp
+	"DoubleEditSubclassProc.h"
+	<cwchar>
+	<string>
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\windows\window\window.cpp
+	"Window.h"
+	<stdexcept>
+	<algorithm>
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\mesh\face3d\face3d.cpp
+	"Face3D.h"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\mesh\face3d\face3d.h
+	"../IDsTypedefs.h"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\mesh\idstypedefs.h
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\mesh\halfedge3d\halfedge3d.cpp
+	"HalfEdge3D.h"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\mesh\halfedge3d\halfedge3d.h
+	"../IDsTypedefs.h"
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawers\console\standardlinkedline3ddrawer\standardlinkedline3ddrawer.cpp
+	"StandardLinkedLine3DDrawer.h"
+	"iostream"
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawers\console\standardlinkedline3ddrawer\standardlinkedline3ddrawer.h
+	"../../IDrawer.h"
+	"../../../LinkedLine3D/LinkedLine3D.h"
+	"../../../DrawContexts/Line3DStandardContext/Line3DStandardContext.h"
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawers\opengl\standardlinkedline3ddrawer\standardlinkedline3ddrawer.cpp
+	"StandardLinkedLine3DDrawer.h"
+	<GL/gl.h>
+
+1795627201 e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawers\opengl\standardlinkedline3ddrawer\standardlinkedline3ddrawer.h
+	"../../IDrawer.h"
+	"../../../LinkedLine3D/LinkedLine3D.h"
+	"../../../DrawContexts/Line3DStandardContext/Line3DStandardContext.h"
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\windows\gw\gow\line3dwindow\line3dwindow.cpp
+	"Line3DWindow.h"
+	"../../../SubclassesProc/DoubleEditSubclassProc/DoubleEditSubclassProc.h"
+	<string>
+	<iostream>
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\redactor\windows\gw\gow\linkedline3dwindow\linkedline3dwindow.cpp
+	"LinkedLine3DWindow.h"
+	"../../../SubclassesProc/DoubleEditSubclassProc/DoubleEditSubclassProc.h"
+	<string>
+	<stdexcept>
+
