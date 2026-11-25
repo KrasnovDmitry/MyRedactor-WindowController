@@ -202,3 +202,19 @@
 	"../../../LinkedLine3D/LinkedLine3D.h"
 	"../../../DrawContexts/Line3DStandardContext/Line3DStandardContext.h"
 
+1795619404 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\face3d\face3d.cpp
+	"Face3D.h"
+
+1795616402 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\mesh3d\mesh3d.cpp
+
+1795618295 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\halfedge3d\halfedge3d.cpp
+	"HalfEdge3D.h"
+
+1795618684 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\halfedge3d\halfedge3d.h
+	"../IDsTypedefs.h"
+
+1795618277 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\idstypedefs.h
+
+1795619085 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\face3d\face3d.h
+	"../IDsTypedefs.h"
+
