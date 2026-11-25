@@ -1,5 +1,5 @@
-#ifndef __HALF_EDGE_3D_H__
-#define __HALF_EDGE_3D_H__
+#ifndef __HALF_EDGE_H__
+#define __HALF_EDGE_H__
 
 #include "../IDsTypedefs.h"
 
@@ -46,4 +46,4 @@ namespace Graphic
 
 }
 
-#endif // __HALF_EDGE_3D_H__
+#endif // __HALF_EDGE_H__
