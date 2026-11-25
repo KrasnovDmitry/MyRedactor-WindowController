@@ -29,7 +29,7 @@ namespace GOW
     {
     public:
         Line3DWindow(void);
-        Line3DWindow(LPCSTR title, DWORD style = WS_OVERLAPPEDWINDOW, int x = CW_USEDEFAULT, int y = CW_USEDEFAULT, int width = 256, int height = 256, Window* parentWindow = nullptr, HMENU id = NULL, Redactor::Graphic::Line3D* line_ptr = nullptr);
+        Line3DWindow(LPCSTR title, DWORD style = WS_OVERLAPPEDWINDOW, int x = CW_USEDEFAULT, int y = CW_USEDEFAULT, int width = 300, int height = 165, Window* parentWindow = nullptr, HMENU id = NULL, Redactor::Graphic::Line3D* line_ptr = nullptr);
         virtual ~Line3DWindow(void);
 
         bool Create(void) override;

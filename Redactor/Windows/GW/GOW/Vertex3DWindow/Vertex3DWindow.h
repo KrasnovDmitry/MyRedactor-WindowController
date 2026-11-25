@@ -26,7 +26,7 @@ namespace GOW
     {
     public:
         Vertex3DWindow(void);
-        Vertex3DWindow(LPCSTR title, DWORD style = WS_OVERLAPPEDWINDOW, int x = CW_USEDEFAULT, int y = CW_USEDEFAULT, int width = 256, int height = 256, Window* parentWindow = nullptr, HMENU id = NULL, Redactor::Graphic::Vertex3D* vert_ptr = nullptr);
+        Vertex3DWindow(LPCSTR title, DWORD style = WS_OVERLAPPEDWINDOW, int x = CW_USEDEFAULT, int y = CW_USEDEFAULT, int width = 185, int height = 140, Window* parentWindow = nullptr, HMENU id = NULL, Redactor::Graphic::Vertex3D* vert_ptr = nullptr);
         virtual ~Vertex3DWindow(void);
 
         bool Create(void) override;

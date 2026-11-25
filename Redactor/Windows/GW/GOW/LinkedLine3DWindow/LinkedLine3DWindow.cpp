@@ -167,7 +167,7 @@ bool Z::LinkedLine3DWindow::Create(void)
     int x_shift = 150;
     int x_size = 130;
 
-    HWND main_lable = CreateWindowEx(0, "STATIC", "Linked Line Edit Window (LEW)", WS_CHILD | WS_VISIBLE, 0, 0, 170, 20, this->hwnd, 0, GetModuleHandle(nullptr), NULL);
+    HWND main_lable = CreateWindowEx(0, "STATIC", "Linked Line Edit Window (LEW)", WS_CHILD | WS_VISIBLE, 0, 0, 225, 20, this->hwnd, 0, GetModuleHandle(nullptr), NULL);
     HWND start_label = CreateWindowEx(0, "STATIC", "Start (Vertex 1):", WS_CHILD | WS_VISIBLE, 0, 25, x_size, 20, this->hwnd, 0, GetModuleHandle(nullptr), NULL);
     HWND X0_lable = CreateWindowEx(0, "STATIC", "X", WS_CHILD | WS_VISIBLE, 0, 50, 15, 20, this->hwnd, 0, GetModuleHandle(nullptr), NULL);
     this->x0_input = CreateWindowEx(0, "EDIT", "", WS_CHILD | WS_BORDER | WS_VISIBLE, 15, 50, 100, 20, this->hwnd, HMENU(X0_INPUT), GetModuleHandle(nullptr), NULL);
