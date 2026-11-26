@@ -202,7 +202,31 @@
 	"../../../LinkedLine3D/LinkedLine3D.h"
 	"../../../DrawContexts/Line3DStandardContext/Line3DStandardContext.h"
 
+<<<<<<< HEAD
 1795649237 source:e:\forprojects\myredactor-windowcontroller\main.cpp
+=======
+1795499498 D
+
+1795619404 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\face3d\face3d.cpp
+	"Face3D.h"
+
+1795616402 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\mesh3d\mesh3d.cpp
+
+1795618295 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\halfedge3d\halfedge3d.cpp
+	"HalfEdge3D.h"
+
+1795618684 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\halfedge3d\halfedge3d.h
+	"../IDsTypedefs.h"
+
+1795618277 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\idstypedefs.h
+
+1795619085 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\face3d\face3d.h
+	"../IDsTypedefs.h"
+
+1795619085 edefs.h"
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\main.cpp
+>>>>>>> 2b3f33dc5eb9debae3690ed547c3b53891914ee4
 	<windows.h>
 	<gl/gl.h>
 	<stdio.h>
@@ -420,15 +444,28 @@
 	<string>
 	<stdexcept>
 
+<<<<<<< HEAD
 1795634778 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\mesh\mesh\mesh3d.cpp
 	"Mesh3D.h"
 	<stdexcept>
 
 1795633633 e:\forprojects\myredactor-windowcontroller\redactor\graphic\mesh\mesh\mesh3d.h
+=======
+1795627201 e77b822a3f10e8c79437f22e380b2658b8b78
+
+1795635611 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\mesh\mesh3d.cpp
+	"Mesh3D.h"
+	<stdexcept>
+
+1795635611 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\mesh\mesh3d.h
+>>>>>>> 2b3f33dc5eb9debae3690ed547c3b53891914ee4
 	"../../Vertex3D/Vertex3D.h"
 	"../Face3D/Face3D.h"
 	"../HalfEdge3D/HalfEdge3D.h"
 	<vector>
 
+<<<<<<< HEAD
 1795636281 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawcontexts\meshstandardcontext\meshstandardcontext.cpp
 
+=======
+>>>>>>> 2b3f33dc5eb9debae3690ed547c3b53891914ee4

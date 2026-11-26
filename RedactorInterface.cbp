@@ -73,8 +73,13 @@
 		<Unit filename="Redactor/Graphic/Mesh/HalfEdge3D/HalfEdge3D.cpp" />
 		<Unit filename="Redactor/Graphic/Mesh/HalfEdge3D/HalfEdge3D.h" />
 		<Unit filename="Redactor/Graphic/Mesh/IDsTypedefs.h" />
+<<<<<<< HEAD
 		<Unit filename="Redactor/Graphic/Mesh/Mesh/Mesh3D.cpp" />
 		<Unit filename="Redactor/Graphic/Mesh/Mesh/Mesh3D.h" />
+=======
+		<Unit filename="Redactor/Graphic/Mesh/Mesh3D/Mesh3D.cpp" />
+		<Unit filename="Redactor/Graphic/Mesh/Mesh3D/Mesh3D.h" />
+>>>>>>> 2b3f33dc5eb9debae3690ed547c3b53891914ee4
 		<Unit filename="Redactor/Graphic/UV/UV2D/UV2D.cpp" />
 		<Unit filename="Redactor/Graphic/UV/UV2D/UV2D.h" />
 		<Unit filename="Redactor/Graphic/Vertex3D/Vertex3D.cpp" />
