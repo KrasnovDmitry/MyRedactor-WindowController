@@ -16,9 +16,12 @@
 #include "Redactor/Windows/GW/GOW/Line3DWindow/Line3DWindow.h"
 #include "Redactor/Windows/GW/GOW/LinkedLine3DWindow/LinkedLine3DWindow.h"
 #include "Redactor/Graphic/Mesh/Mesh/Mesh3D.h"
+<<<<<<< HEAD
 #include "Redactor/Graphic/DrawContexts/MeshStandardContext/MeshStandardContext.h"
 #include "Redactor/Graphic/Drawers/Console/StandardMesh3DDrawer/StandardMesh3DDrawer.h"
 #include "Redactor/Graphic/Drawers/OpenGL/StandardMesh3DDrawer/StandardMesh3DDrawer.h"
+=======
+>>>>>>> ec5f8cca959bdc2e93115a7b6e5ce30430c822de
 
 float theta = 0.0f;
 bool is_up_moving = true;

@@ -35,7 +35,7 @@
 			<Add library="opengl32" />
 			<Add library="glu32" />
 			<Add library="gdi32" />
-			<Add library="C:/MinGW/lib/libcomctl32.a" />
+			<Add library="E:/MinGW/lib/libcomctl32.a" />
 		</Linker>
 		<Unit filename="Redactor/Graphic/Colors/Color3B/Color3B.cpp" />
 		<Unit filename="Redactor/Graphic/Colors/Color3B/Color3B.h" />
@@ -47,6 +47,8 @@
 		<Unit filename="Redactor/Graphic/Colors/Color4D/Color4D.h" />
 		<Unit filename="Redactor/Graphic/DrawContexts/Line3DStandardContext/Line3DStandardContext.cpp" />
 		<Unit filename="Redactor/Graphic/DrawContexts/Line3DStandardContext/Line3DStandardContext.h" />
+		<Unit filename="Redactor/Graphic/DrawContexts/MeshStandardContext/MeshStandardContext.cpp" />
+		<Unit filename="Redactor/Graphic/DrawContexts/MeshStandardContext/MeshStandardContext.h" />
 		<Unit filename="Redactor/Graphic/DrawContexts/Vertex3DStandardContext/Vertex3DStandardContext.cpp" />
 		<Unit filename="Redactor/Graphic/DrawContexts/Vertex3DStandardContext/Vertex3DStandardContext.h" />
 		<Unit filename="Redactor/Graphic/Drawers/Console/StandardLine3DDrawer/StandardLine3DDrawer.cpp" />
@@ -71,8 +73,13 @@
 		<Unit filename="Redactor/Graphic/Mesh/HalfEdge3D/HalfEdge3D.cpp" />
 		<Unit filename="Redactor/Graphic/Mesh/HalfEdge3D/HalfEdge3D.h" />
 		<Unit filename="Redactor/Graphic/Mesh/IDsTypedefs.h" />
+<<<<<<< HEAD
+		<Unit filename="Redactor/Graphic/Mesh/Mesh/Mesh3D.cpp" />
+		<Unit filename="Redactor/Graphic/Mesh/Mesh/Mesh3D.h" />
+=======
 		<Unit filename="Redactor/Graphic/Mesh/Mesh3D/Mesh3D.cpp" />
 		<Unit filename="Redactor/Graphic/Mesh/Mesh3D/Mesh3D.h" />
+>>>>>>> 2b3f33dc5eb9debae3690ed547c3b53891914ee4
 		<Unit filename="Redactor/Graphic/UV/UV2D/UV2D.cpp" />
 		<Unit filename="Redactor/Graphic/UV/UV2D/UV2D.h" />
 		<Unit filename="Redactor/Graphic/Vertex3D/Vertex3D.cpp" />
