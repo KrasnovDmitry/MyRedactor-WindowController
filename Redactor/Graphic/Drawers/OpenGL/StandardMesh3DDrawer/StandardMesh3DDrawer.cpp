@@ -8,10 +8,24 @@ void Redactor::Graphic::Drawers::OpenGL::StandardMesh3DDrawer::Draw(const Redact
         const Redactor::Graphic::DrawContext::Vertex3DStandardContext& vertexContext = context.VertexContext();
         const Redactor::Graphic::DrawContext::Line3DStandardContext& edgeContext = context.EdgeContext();
 
-        for(unsigned int i = 0; i < object.GetVerticiesAmount(); i++)
+        glColor4ub(255, 255, 255, 255);
+        for(unsigned int i = 0; i < object.GetFacesAmount(); i++)
         {
-            const Redactor::Graphic::Vertex3D& vert_ref = object.VertexById(i+1);
-            this->vertexDrawer.Draw(vert_ref, vertexContext);
+            HalfEdgeId he_id = object.FaceById(i+1).GetHalfEdgeId();
+            HalfEdgeId he_next_id;
+            HalfEdgeId he1_id = he_id;
+            if(he_id)
+            {
+                glBegin(GL_POLYGON);
+                do
+                {
+                    he_next_id = object.HalfEdgeById(he1_id).GetNextHalfEdgeId();
+                    const Redactor::Graphic::Vertex3D& vert_ref = object.VertexById(object.HalfEdgeById(he1_id).GetVertexId());
+                    glVertex3d(vert_ref.GetX(), vert_ref.GetY(), vert_ref.GetZ());
+                    he1_id = he_next_id;
+                }while(he1_id != he_id);
+                glEnd();
+            }
         }
 
         for(unsigned int i = 0; i < object.GetHalfEdgesAmount(); i++)
@@ -41,6 +55,12 @@ void Redactor::Graphic::Drawers::OpenGL::StandardMesh3DDrawer::Draw(const Redact
             }
 
             this->edgeDrawer.Draw(line, edgeContext);
+        }
+
+        for(unsigned int i = 0; i < object.GetVerticiesAmount(); i++)
+        {
+            const Redactor::Graphic::Vertex3D& vert_ref = object.VertexById(i+1);
+            this->vertexDrawer.Draw(vert_ref, vertexContext);
         }
     }
 }

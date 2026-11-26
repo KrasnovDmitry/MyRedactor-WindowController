@@ -4,7 +4,7 @@
 	<stdexcept>
 	<algorithm>
 
-1795683217 source:c:\users\name\desktop\programming_0\2026\redactorinterface\main.cpp
+1795696181 source:c:\users\name\desktop\programming_0\2026\redactorinterface\main.cpp
 	<windows.h>
 	<gl/gl.h>
 	<stdio.h>
@@ -458,7 +458,7 @@
 
 1795627201 e77b822a3f10e8c79437f22e380b2658b8b78
 
-1795676072 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\mesh\mesh3d.cpp
+1795684066 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\mesh\mesh3d.cpp
 	"Mesh3D.h"
 	<stdexcept>
 	<iostream>
@@ -473,7 +473,7 @@
 	"../Vertex3DStandardContext/Vertex3DStandardContext.h"
 	"../Line3DStandardContext/Line3DStandardContext.h"
 
-1795680178 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\console\standardmesh3ddrawer\standardmesh3ddrawer.cpp
+1795694423 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\console\standardmesh3ddrawer\standardmesh3ddrawer.cpp
 	"StandardMesh3DDrawer.h"
 	<iostream>
 
@@ -486,7 +486,7 @@
 	"../../../Mesh/Mesh/Mesh3D.h"
 	"../../../DrawContexts/MeshStandardContext/MeshStandardContext.h"
 
-1795680672 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\opengl\standardmesh3ddrawer\standardmesh3ddrawer.cpp
+1795695957 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\opengl\standardmesh3ddrawer\standardmesh3ddrawer.cpp
 	"StandardMesh3DDrawer.h"
 	<GL/gl.h>
 

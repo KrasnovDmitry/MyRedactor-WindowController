@@ -272,7 +272,7 @@ Redactor::Graphic::Mesh3D Redactor::Graphic::SimpleMesh::CreateRectangle3D(doubl
 
     result.AddFace(vert1_id, vert2_id, vert3_id);
     HalfEdgeId twin1_id = result.GetHalfEdgesAmount() - 1;
-    result.AddFace(vert1_id, vert4_id, vert3_id);
+    result.AddFace(vert4_id, vert2_id, vert3_id);
     HalfEdgeId twin2_id = result.GetHalfEdgesAmount() - 1;
 
     result.HalfEdgeById(twin1_id).SetTwinHalfEdgeId(twin2_id);
@@ -291,7 +291,7 @@ Redactor::Graphic::Mesh3D Redactor::Graphic::SimpleMesh::CreateRectangle3D(Redac
 
     result.AddFace(vert1_id, vert2_id, vert3_id);
     HalfEdgeId twin1_id = result.GetHalfEdgesAmount() - 1;
-    result.AddFace(vert1_id, vert4_id, vert3_id);
+    result.AddFace(vert4_id, vert2_id, vert3_id);
     HalfEdgeId twin2_id = result.GetHalfEdgesAmount() - 1;
 
     result.HalfEdgeById(twin1_id).SetTwinHalfEdgeId(twin2_id);

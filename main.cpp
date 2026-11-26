@@ -49,14 +49,10 @@ int WINAPI WinMain(HINSTANCE hInstance,
     vert_console_drawer.Draw(vert, vert_context);
     vert_console_drawer.Draw(vert_next, vert_context);
 
-    Redactor::Graphic::Mesh3D mesh = Redactor::Graphic::SimpleMesh::CreateTriangle3D(-0.6, -0.3, 0, 0.0, 1.0, 0.0, 0.6, -0.3, 0);
+    Redactor::Graphic::Mesh3D mesh = Redactor::Graphic::SimpleMesh::CreateRectangle3D(-0.6, -0.3, 0, 0.0, 0.9, 0.0, 0.6, -0.3, 0, 1, 0.9, 0);
     Redactor::Graphic::DrawContext::MeshStandardDrawContext mesh_context = Redactor::Graphic::DrawContext::MeshStandardDrawContext();
     Redactor::Graphic::Drawers::Console::StandardMesh3DDrawer mesh_console_drawer = Redactor::Graphic::Drawers::Console::StandardMesh3DDrawer();
     Redactor::Graphic::Drawers::OpenGL::StandardMesh3DDrawer mesh_opengl_drawer = Redactor::Graphic::Drawers::OpenGL::StandardMesh3DDrawer();
-
-    std::cout << mesh.VertexById(1).GetX() << "; " << mesh.VertexById(1).GetY() << "; " << mesh.VertexById(1).GetZ() << std::endl;
-    std::cout << mesh.VertexById(2).GetX() << "; " << mesh.VertexById(2).GetY() << "; " << mesh.VertexById(2).GetZ() << std::endl;
-    std::cout << mesh.VertexById(3).GetX() << "; " <<  mesh.VertexById(3).GetY() << "; " <<  mesh.VertexById(3).GetZ() << std::endl;
 
     mesh_console_drawer.Draw(mesh, mesh_context);
 
@@ -130,7 +126,10 @@ int WINAPI WinMain(HINSTANCE hInstance,
                                                                                          &window);
 
     Redactor::Windows::GW::GOW::Vertex3DWindow vertEdit = Redactor::Windows::GW::GOW::Vertex3DWindow();
-    vertEdit.SetObjectPtr(&vert);
+    vertEdit.SetObjectPtr(&mesh.VertexById(1));
+    mesh_context.VertexContext().SetSize(5);
+    mesh_context.EdgeContext().SetColor(0, 255, 0, 255);
+    mesh_context.EdgeContext().SetWidth(3);
 
     Redactor::Windows::GW::GOW::LinkedLine3DWindow lineEdit = Redactor::Windows::GW::GOW::LinkedLine3DWindow();
     lineEdit.SetObjectPtr(&line);
@@ -150,6 +149,9 @@ int WINAPI WinMain(HINSTANCE hInstance,
     render_s.Show(nCmdShow);
     vertEdit.Show(nCmdShow);
     lineEdit.Show(nCmdShow);
+
+    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_LINE_SMOOTH);
 
     /* program main loop */
     while (!bQuit)
@@ -177,10 +179,6 @@ int WINAPI WinMain(HINSTANCE hInstance,
             render.SetCurrent();
             glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-            line_opengl_drawer.Draw(line, line_context);
-            vert_opengl_drawer.Draw(vert, vert_context);
-            vert_opengl_drawer.Draw(vert_next, vert_context);
-            line_opengl_drawer.Draw(line_0, line_context);
             mesh_opengl_drawer.Draw(mesh, mesh_context);
             render.SwapBuffer();
             render_s.DrawByFunc(draw_square);
