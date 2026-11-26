@@ -4,7 +4,7 @@
 	<stdexcept>
 	<algorithm>
 
-1795499249 source:c:\users\name\desktop\programming_0\2026\redactorinterface\main.cpp
+1795680280 source:c:\users\name\desktop\programming_0\2026\redactorinterface\main.cpp
 	<windows.h>
 	<gl/gl.h>
 	<stdio.h>
@@ -22,6 +22,9 @@
 	"Redactor/Windows/GW/GOW/Vertex3DWindow/Vertex3DWindow.h"
 	"Redactor/Windows/GW/GOW/Line3DWindow/Line3DWindow.h"
 	"Redactor/Windows/GW/GOW/LinkedLine3DWindow/LinkedLine3DWindow.h"
+	"Redactor/Graphic/Mesh/Mesh/Mesh3D.h"
+	"Redactor/Graphic/DrawContexts/MeshStandardContext/MeshStandardContext.h"
+	"Redactor/Graphic/Drawers/Console/StandardMesh3DDrawer/StandardMesh3DDrawer.h"
 
 1795078507 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\window\window.h
 	<windows.h>
@@ -109,7 +112,7 @@
 	"../Vertex3D/Vertex3D.h"
 	"string"
 
-1795451131 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\linkedline3d\linkedline3d.cpp
+1795680012 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\linkedline3d\linkedline3d.cpp
 	"LinkedLine3D.h"
 	"math.h"
 
@@ -441,13 +444,47 @@
 
 1795627201 e77b822a3f10e8c79437f22e380b2658b8b78
 
-1795635611 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\mesh\mesh3d.cpp
+1795676072 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\mesh\mesh3d.cpp
 	"Mesh3D.h"
 	<stdexcept>
+	<iostream>
 
 1795635611 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\mesh\mesh3d.h
 	"../../Vertex3D/Vertex3D.h"
 	"../Face3D/Face3D.h"
 	"../HalfEdge3D/HalfEdge3D.h"
 	<vector>
+
+1795677396 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawcontexts\meshstandardcontext\meshstandardcontext.cpp
+	"MeshStandardContext.h"
+
+1795676949 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawcontexts\meshstandardcontext\meshstandardcontext.h
+	"../Line3DStandardContext/Line3DStandardContext.h"
+	"../Vertex3DStandardContext/Vertex3DStandardContext.h"
+
+1795680178 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\console\standardmesh3ddrawer\standardmesh3ddrawer.cpp
+	"StandardMesh3DDrawer.h"
+	<iostream>
+
+1795678456 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\console\standardmesh3ddrawer\standardmesh3ddrawer.h
+	"../../IDrawer.h"
+	"../../../LinkedLine3D/LinkedLine3D.h"
+	"../../../DrawContexts/Line3DStandardContext/Line3DStandardContext.h"
+	"../StandardLinkedLine3DDrawer/StandardLinkedLine3DDrawer.h"
+	"../StandardVertex3DDrawer/StandardVertex3DDrawer.h"
+	"../../../Mesh/Mesh/Mesh3D.h"
+	"../../../DrawContexts/MeshStandardContext/MeshStandardContext.h"
+
+1795680672 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\opengl\standardmesh3ddrawer\standardmesh3ddrawer.cpp
+	"StandardMesh3DDrawer.h"
+	<GL/gl.h>
+
+1795680656 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\opengl\standardmesh3ddrawer\standardmesh3ddrawer.h
+	"../../IDrawer.h"
+	"../../../LinkedLine3D/LinkedLine3D.h"
+	"../../../DrawContexts/Line3DStandardContext/Line3DStandardContext.h"
+	"../StandardLinkedLine3DDrawer/StandardLinkedLine3DDrawer.h"
+	"../StandardVertex3DDrawer/StandardVertex3DDrawer.h"
+	"../../../Mesh/Mesh/Mesh3D.h"
+	"../../../DrawContexts/MeshStandardContext/MeshStandardContext.h"
 

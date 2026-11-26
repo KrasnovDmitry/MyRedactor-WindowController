@@ -75,9 +75,9 @@ G::LinkedLine3D& G::LinkedLine3D::operator=(LinkedLine3D&& other) noexcept
 
 G::LinkedLine3D::~LinkedLine3D(void)
 {
-    if(GetStartDeallocFlag())
+    if(GetStartDeallocFlag() && this->start_ptr)
         delete this->start_ptr;
-    if(GetEndDeallocFlag())
+    if(GetEndDeallocFlag() && this->end_ptr)
         delete this->end_ptr;
 }
 

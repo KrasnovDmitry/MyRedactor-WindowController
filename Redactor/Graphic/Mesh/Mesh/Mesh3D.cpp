@@ -1,5 +1,6 @@
 #include "Mesh3D.h"
 #include <stdexcept>
+#include <iostream>
 
 Redactor::Graphic::Mesh3D::Mesh3D(void)
 {
@@ -197,31 +198,27 @@ FaceId Redactor::Graphic::Mesh3D::AddFace(HalfEdgeId halfEdge_id)
 FaceId Redactor::Graphic::Mesh3D::AddFace(VertexId vert1_id, VertexId vert2_id, VertexId vert3_id)
 {
     FaceId result = this->AddFace();
-    Redactor::Graphic::Face& face = this->FaceById(result);
 
     HalfEdgeId he1_id = this->AddEdge();
-    face.SetHalfEdgeId(he1_id);
-    Redactor::Graphic::HalfEdge& halfEdge_1 = this->HalfEdgeById(he1_id);
+    this->FaceById(result).SetHalfEdgeId(he1_id);
     HalfEdgeId he2_id = this->AddEdge();
-    Redactor::Graphic::HalfEdge& halfEdge_2 = this->HalfEdgeById(he2_id);
     HalfEdgeId he3_id = this->AddEdge();
-    Redactor::Graphic::HalfEdge& halfEdge_3 = this->HalfEdgeById(he3_id);
 
-    halfEdge_1.SetFaceId(result);
-    halfEdge_2.SetFaceId(result);
-    halfEdge_3.SetFaceId(result);
+    this->HalfEdgeById(he1_id).SetFaceId(result);
+    this->HalfEdgeById(he2_id).SetFaceId(result);
+    this->HalfEdgeById(he3_id).SetFaceId(result);
 
-    halfEdge_1.SetVertexId(vert2_id);
-    halfEdge_2.SetVertexId(vert3_id);
-    halfEdge_3.SetVertexId(vert1_id);
+    this->HalfEdgeById(he1_id).SetVertexId(vert2_id);
+    this->HalfEdgeById(he2_id).SetVertexId(vert3_id);
+    this->HalfEdgeById(he3_id).SetVertexId(vert1_id);
 
-    halfEdge_1.SetNextHalfEdgeId(he2_id);
-    halfEdge_2.SetNextHalfEdgeId(he3_id);
-    halfEdge_3.SetNextHalfEdgeId(he1_id);
+    this->HalfEdgeById(he1_id).SetNextHalfEdgeId(he2_id);
+    this->HalfEdgeById(he2_id).SetNextHalfEdgeId(he3_id);
+    this->HalfEdgeById(he3_id).SetNextHalfEdgeId(he1_id);
 
-    halfEdge_1.SetPrevHalfEdgeId(he3_id);
-    halfEdge_2.SetPrevHalfEdgeId(he1_id);
-    halfEdge_3.SetPrevHalfEdgeId(he2_id);
+    this->HalfEdgeById(he1_id).SetPrevHalfEdgeId(he3_id);
+    this->HalfEdgeById(he2_id).SetPrevHalfEdgeId(he1_id);
+    this->HalfEdgeById(he3_id).SetPrevHalfEdgeId(he2_id);
 
     return result;
 }

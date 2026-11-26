@@ -15,6 +15,10 @@
 #include "Redactor/Windows/GW/GOW/Vertex3DWindow/Vertex3DWindow.h"
 #include "Redactor/Windows/GW/GOW/Line3DWindow/Line3DWindow.h"
 #include "Redactor/Windows/GW/GOW/LinkedLine3DWindow/LinkedLine3DWindow.h"
+#include "Redactor/Graphic/Mesh/Mesh/Mesh3D.h"
+#include "Redactor/Graphic/DrawContexts/MeshStandardContext/MeshStandardContext.h"
+#include "Redactor/Graphic/Drawers/Console/StandardMesh3DDrawer/StandardMesh3DDrawer.h"
+#include "Redactor/Graphic/Drawers/OpenGL/StandardMesh3DDrawer/StandardMesh3DDrawer.h"
 
 float theta = 0.0f;
 bool is_up_moving = true;
@@ -44,6 +48,17 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
     vert_console_drawer.Draw(vert, vert_context);
     vert_console_drawer.Draw(vert_next, vert_context);
+
+    Redactor::Graphic::Mesh3D mesh = Redactor::Graphic::SimpleMesh::CreateTriangle3D(-0.6, -0.3, 0, 0.0, 1.0, 0.0, 0.6, -0.3, 0);
+    Redactor::Graphic::DrawContext::MeshStandardDrawContext mesh_context = Redactor::Graphic::DrawContext::MeshStandardDrawContext();
+    Redactor::Graphic::Drawers::Console::StandardMesh3DDrawer mesh_console_drawer = Redactor::Graphic::Drawers::Console::StandardMesh3DDrawer();
+    Redactor::Graphic::Drawers::OpenGL::StandardMesh3DDrawer mesh_opengl_drawer = Redactor::Graphic::Drawers::OpenGL::StandardMesh3DDrawer();
+
+    std::cout << mesh.VertexById(1).GetX() << "; " << mesh.VertexById(1).GetY() << "; " << mesh.VertexById(1).GetZ() << std::endl;
+    std::cout << mesh.VertexById(2).GetX() << "; " << mesh.VertexById(2).GetY() << "; " << mesh.VertexById(2).GetZ() << std::endl;
+    std::cout << mesh.VertexById(3).GetX() << "; " <<  mesh.VertexById(3).GetY() << "; " <<  mesh.VertexById(3).GetZ() << std::endl;
+
+    mesh_console_drawer.Draw(mesh, mesh_context);
 
     Redactor::Graphic::LinkedLine3D line = Redactor::Graphic::LinkedLine3D(nullptr, &vert_next);
     line.SetDeallocFlags(false, false);
@@ -166,6 +181,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
             vert_opengl_drawer.Draw(vert, vert_context);
             vert_opengl_drawer.Draw(vert_next, vert_context);
             line_opengl_drawer.Draw(line_0, line_context);
+            mesh_opengl_drawer.Draw(mesh, mesh_context);
             render.SwapBuffer();
             render_s.DrawByFunc(draw_square);
 
