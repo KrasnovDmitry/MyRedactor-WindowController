@@ -4,7 +4,7 @@
 	<stdexcept>
 	<algorithm>
 
-1795680280 source:c:\users\name\desktop\programming_0\2026\redactorinterface\main.cpp
+1795683217 source:c:\users\name\desktop\programming_0\2026\redactorinterface\main.cpp
 	<windows.h>
 	<gl/gl.h>
 	<stdio.h>
@@ -25,6 +25,7 @@
 	"Redactor/Graphic/Mesh/Mesh/Mesh3D.h"
 	"Redactor/Graphic/DrawContexts/MeshStandardContext/MeshStandardContext.h"
 	"Redactor/Graphic/Drawers/Console/StandardMesh3DDrawer/StandardMesh3DDrawer.h"
+	"Redactor/Graphic/Drawers/OpenGL/StandardMesh3DDrawer/StandardMesh3DDrawer.h"
 
 1795078507 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\windows\window\window.h
 	<windows.h>
@@ -205,10 +206,9 @@
 	"../../../LinkedLine3D/LinkedLine3D.h"
 	"../../../DrawContexts/Line3DStandardContext/Line3DStandardContext.h"
 
-<<<<<<< HEAD
-1795649237 source:e:\forprojects\myredactor-windowcontroller\main.cpp
-=======
-1795499498 D
+1795680656 D
+
+1795627201 source:e:\forprojects\myredactor-windowcontroller\main.cpp
 
 1795619404 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\face3d\face3d.cpp
 	"Face3D.h"
@@ -228,8 +228,7 @@
 
 1795619085 edefs.h"
 
-1795627201 source:e:\forprojects\myredactor-windowcontroller\main.cpp
->>>>>>> 2b3f33dc5eb9debae3690ed547c3b53891914ee4
+1795636281 f33dc5eb9debae3690ed547c3b53891914ee4
 	<windows.h>
 	<gl/gl.h>
 	<stdio.h>
@@ -248,6 +247,10 @@
 	"Redactor/Windows/GW/GOW/Line3DWindow/Line3DWindow.h"
 	"Redactor/Windows/GW/GOW/LinkedLine3DWindow/LinkedLine3DWindow.h"
 	"Redactor/Graphic/Mesh/Mesh/Mesh3D.h"
+	"../../Vertex3D/Vertex3D.h"
+	"../Face3D/Face3D.h"
+	"../HalfEdge3D/HalfEdge3D.h"
+	<vector>
 
 1795627201 e:\forprojects\myredactor-windowcontroller\redactor\windows\window\window.h
 	<windows.h>
@@ -447,13 +450,12 @@
 	<string>
 	<stdexcept>
 
-<<<<<<< HEAD
 1795634778 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\mesh\mesh\mesh3d.cpp
 	"Mesh3D.h"
 	<stdexcept>
 
 1795633633 e:\forprojects\myredactor-windowcontroller\redactor\graphic\mesh\mesh\mesh3d.h
-=======
+
 1795627201 e77b822a3f10e8c79437f22e380b2658b8b78
 
 1795676072 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\mesh\mesh3d.cpp
@@ -462,19 +464,14 @@
 	<iostream>
 
 1795635611 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\mesh\mesh\mesh3d.h
->>>>>>> 2b3f33dc5eb9debae3690ed547c3b53891914ee4
-	"../../Vertex3D/Vertex3D.h"
-	"../Face3D/Face3D.h"
-	"../HalfEdge3D/HalfEdge3D.h"
-	<vector>
 
-<<<<<<< HEAD
-1795677396 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawcontexts\meshstandardcontext\meshstandardcontext.cpp
+1795683194 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawcontexts\meshstandardcontext\meshstandardcontext.cpp
 	"MeshStandardContext.h"
 
-1795676949 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawcontexts\meshstandardcontext\meshstandardcontext.h
-	"../Line3DStandardContext/Line3DStandardContext.h"
+1795683175 c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawcontexts\meshstandardcontext\meshstandardcontext.h
+	"../../Colors/Color4B/Color4B.h"
 	"../Vertex3DStandardContext/Vertex3DStandardContext.h"
+	"../Line3DStandardContext/Line3DStandardContext.h"
 
 1795680178 source:c:\users\name\desktop\programming_0\2026\redactorinterface\redactor\graphic\drawers\console\standardmesh3ddrawer\standardmesh3ddrawer.cpp
 	"StandardMesh3DDrawer.h"
@@ -502,10 +499,9 @@
 	"../../../Mesh/Mesh/Mesh3D.h"
 	"../../../DrawContexts/MeshStandardContext/MeshStandardContext.h"
 
-=======
-<<<<<<< HEAD
+1795680656 DrawContexts/MeshStandardContext/MeshStandardContext.h"
+
 1795636281 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawcontexts\meshstandardcontext\meshstandardcontext.cpp
 
-=======
->>>>>>> 2b3f33dc5eb9debae3690ed547c3b53891914ee4
->>>>>>> ec5f8cca959bdc2e93115a7b6e5ce30430c822de
+1795636281 f8cca959bdc2e93115a7b6e5ce30430c822de
+
