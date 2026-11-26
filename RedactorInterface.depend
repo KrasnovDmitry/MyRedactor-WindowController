@@ -202,7 +202,7 @@
 	"../../../LinkedLine3D/LinkedLine3D.h"
 	"../../../DrawContexts/Line3DStandardContext/Line3DStandardContext.h"
 
-1795627201 source:e:\forprojects\myredactor-windowcontroller\main.cpp
+1795649237 source:e:\forprojects\myredactor-windowcontroller\main.cpp
 	<windows.h>
 	<gl/gl.h>
 	<stdio.h>
@@ -220,6 +220,7 @@
 	"Redactor/Windows/GW/GOW/Vertex3DWindow/Vertex3DWindow.h"
 	"Redactor/Windows/GW/GOW/Line3DWindow/Line3DWindow.h"
 	"Redactor/Windows/GW/GOW/LinkedLine3DWindow/LinkedLine3DWindow.h"
+	"Redactor/Graphic/Mesh/Mesh/Mesh3D.h"
 
 1795627201 e:\forprojects\myredactor-windowcontroller\redactor\windows\window\window.h
 	<windows.h>
@@ -418,4 +419,16 @@
 	"../../../SubclassesProc/DoubleEditSubclassProc/DoubleEditSubclassProc.h"
 	<string>
 	<stdexcept>
+
+1795634778 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\mesh\mesh\mesh3d.cpp
+	"Mesh3D.h"
+	<stdexcept>
+
+1795633633 e:\forprojects\myredactor-windowcontroller\redactor\graphic\mesh\mesh\mesh3d.h
+	"../../Vertex3D/Vertex3D.h"
+	"../Face3D/Face3D.h"
+	"../HalfEdge3D/HalfEdge3D.h"
+	<vector>
+
+1795636281 source:e:\forprojects\myredactor-windowcontroller\redactor\graphic\drawcontexts\meshstandardcontext\meshstandardcontext.cpp
 

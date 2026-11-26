@@ -15,6 +15,7 @@
 #include "Redactor/Windows/GW/GOW/Vertex3DWindow/Vertex3DWindow.h"
 #include "Redactor/Windows/GW/GOW/Line3DWindow/Line3DWindow.h"
 #include "Redactor/Windows/GW/GOW/LinkedLine3DWindow/LinkedLine3DWindow.h"
+#include "Redactor/Graphic/Mesh/Mesh/Mesh3D.h"
 
 float theta = 0.0f;
 bool is_up_moving = true;
